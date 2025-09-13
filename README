@@ -1,0 +1,5 @@
+Use scene called "Enemy"
+Click Build / Play button
+cowboy pill can move and rotate, but shooting as
+been an issue ever since I tried to switch to the
+ new input system. Movement and rotation only worked once I switched back to old input system.
