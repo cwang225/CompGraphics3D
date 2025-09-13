@@ -26,6 +26,11 @@ public class transformscript : MonoBehaviour
     //     lookValue = value.Get<Vector2>().x * rotationSpeed;
     // }
 
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     // Update is called once per frame
     void Update()
