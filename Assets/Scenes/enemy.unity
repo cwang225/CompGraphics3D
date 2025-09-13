@@ -1076,6 +1076,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6674856116872537027}
+    - targetCorrespondingSourceObject: {fileID: 278912339002795657, guid: 7c359fa79a7c08c48b8d1c828cb09a65,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6674856116872537028}
   m_SourcePrefab: {fileID: 100100000, guid: 7c359fa79a7c08c48b8d1c828cb09a65, type: 3}
 --- !u!4 &6674856116872537015 stripped
 Transform:
@@ -1095,8 +1099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b7ab8b3bc840f4cb877198997d372d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  rotationSpeed: 0
+  speed: 0.1
+  rotationSpeed: 0.3
 --- !u!114 &6674856116872537027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,6 +1115,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1308647189560365965, guid: 58dfc308545f0c84ba87c9e0440672bc, type: 3}
   shootFlower: {fileID: 682696828}
+--- !u!114 &6674856116872537028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836450969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 17c256dd52948bd4d9b1d73ccab95b85,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!4 &8223632428621448017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7900019040508272441, guid: 0ea809806ab4793479f1be9045f0f906,
