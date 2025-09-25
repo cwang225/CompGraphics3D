@@ -44,24 +44,29 @@ public class transformscript : MonoBehaviour
 
         // previous iteration of the chapters
         float mouseX = Input.GetAxis("Mouse X");
+        Debug.Log(mouseX);
         transform.Rotate(0, mouseX + rotationSpeed + Time.deltaTime, 0);
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(0, 0, speed + Time.deltaTime);
+            Debug.Log("w");
+            transform.Translate(0, 0, speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(0, 0, -speed + Time.deltaTime);
+            Debug.Log("s");
+            transform.Translate(0, 0, -speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-speed + Time.deltaTime, 0, 0);
+            Debug.Log("a");
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(speed + Time.deltaTime, 0, 0);
+            Debug.Log("d");
+            transform.Translate(speed * Time.deltaTime, 0, 0);
         }
-        transform.Translate(0, 0, speed);
+        // transform.Translate(0, 0, speed);
     }
 }

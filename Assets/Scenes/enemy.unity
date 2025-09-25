@@ -1010,6 +1010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (fly)
       objectReference: {fileID: 0}
+    - target: {fileID: 5738911050737668462, guid: 7c359fa79a7c08c48b8d1c828cb09a65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6232995125530059431, guid: 7c359fa79a7c08c48b8d1c828cb09a65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,6 +1065,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8230480919620646249, guid: 7c359fa79a7c08c48b8d1c828cb09a65,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1099,8 +1109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b7ab8b3bc840f4cb877198997d372d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
-  rotationSpeed: 0.3
+  speed: 10
+  rotationSpeed: 0.8
 --- !u!114 &6674856116872537027
 MonoBehaviour:
   m_ObjectHideFlags: 0
