@@ -1,3 +1,5 @@
 Use scene called "Enemy"
 Click Build / Play button
-Moving and shooting work, but this is all on the old system; I could not get shooting and movement to work on the new system, despite following the textbook.
+Player needs to get past two standing guards in order to free their fleeing friends
+Move with WASD, shoot by clicking
+Use Esc to leave game
