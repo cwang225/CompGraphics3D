@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ContactDestroyer : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // bullet die
+    // void OnTriggerEnter()
+    // {
+    //     Destroy(gameObject);
+    // }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        Destroy(other.gameObject);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
