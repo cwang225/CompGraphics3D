@@ -13,13 +13,13 @@ public class ContactDamager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
         Life life = other.GetComponent<Life>();
         if (life != null)
         {
             //Debug.Log("took damage");
             life.amount -= damage;
         }
+        Destroy(gameObject);
     }
 
     // Update is called once per frame

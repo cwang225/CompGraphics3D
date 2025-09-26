@@ -150,6 +150,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3678938611068902419, guid: f1f072e1b82aa3c4aae61f48512b2701,
+        type: 3}
+      propertyPath: baseTransform
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4080995140599552242, guid: f1f072e1b82aa3c4aae61f48512b2701,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -272,6 +277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1620242906704137876
 MonoBehaviour:
   m_ObjectHideFlags: 0

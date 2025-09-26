@@ -8,7 +8,6 @@ public class waveSpawner : MonoBehaviour
     public float startTime;
     public float endTime;
     public float spawnRate;
-    // Start is called before the first frame update
     void Start()
     {
         WavesManager.instance.AddWave(this);
@@ -18,7 +17,11 @@ public class waveSpawner : MonoBehaviour
 
     void Spawn()
     {
+
         Instantiate(prefab, transform.position, transform.rotation);
+        // GameObject enemy = Instantiate(prefab, transform.position, transform.rotation);
+        // PlayerShootingFlower script = enemy.AddComponent<PlayerShootingFlower>();
+        // script.shootFlower = GameObject.Find("enemyshoot");
     }
 
 

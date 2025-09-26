@@ -175,6 +175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLAYER(FLY
       objectReference: {fileID: 0}
+    - target: {fileID: 8229165902105796520, guid: f1f072e1b82aa3c4aae61f48512b2701,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -211,6 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4553578749646840166
 MonoBehaviour:
   m_ObjectHideFlags: 0
