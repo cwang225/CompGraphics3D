@@ -17,6 +17,7 @@ public class ContactDamager : MonoBehaviour
         Life life = other.GetComponent<Life>();
         if (life != null)
         {
+            //Debug.Log("took damage");
             life.amount -= damage;
         }
     }

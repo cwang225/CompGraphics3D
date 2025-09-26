@@ -9,11 +9,14 @@ public class transformscript : MonoBehaviour
     public float rotationSpeed;
     private Vector2 movementValue;
     private float lookValue;
+    private Rigidbody rb;
 
     private void Awake()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        rb = GetComponent<Rigidbody>();
     }
 
     public void OnMove(InputValue value)
@@ -35,6 +38,14 @@ public class transformscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // could not get this to work
+        // rb.AddRelativeForce(
+        //     movementValue.x * Time.deltaTime,
+        //     0,
+        //     movementValue.y * Time.deltaTime);
+        // rb.AddRelativeTorque(0, lookValue * Time.deltaTime, 0);
+
+        // previous code before chapter 7
         transform.Translate(
             movementValue.x * Time.deltaTime,
             0,
