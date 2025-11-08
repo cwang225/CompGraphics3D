@@ -7,11 +7,8 @@ public class PlayerShootingFlower : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject shootFlower;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public AudioSource shootSound;
+    public int bulletsAmount = 100;
 
     // Update is called once per frame
     // void Update()
@@ -34,11 +31,14 @@ public class PlayerShootingFlower : MonoBehaviour
 
         public void OnFire(InputValue value)
     {
-        if (value.isPressed)
+        if (value.isPressed && Time.timeScale > 0)
         {
+            //shootSound.Play();
+            bulletsAmount--;
             GameObject clone = Instantiate(prefab);
             clone.transform.position = shootFlower.transform.position;
             clone.transform.rotation = shootFlower.transform.rotation;
+            
         }
 
 

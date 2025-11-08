@@ -7,6 +7,7 @@ public class WavesGameMode : MonoBehaviour
 {
     [SerializeField] private Life playerLife;
     [SerializeField] private Life playerBaseLife;
+    public PlayerShootingFlower targetShooting;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,11 @@ public class WavesGameMode : MonoBehaviour
     void Awake()
     {
         playerLife.onDeath.AddListener(OnPlayerOrBaseDied);
-        playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);
+        //playerBaseLife.onDeath.AddListener(OnPlayerOrBaseDied);
+    }
+    void Update()
+    {
+        OnPlayerOrBaseDied();
     }
 
     // Update is called once per frame
@@ -39,7 +44,11 @@ public class WavesGameMode : MonoBehaviour
 
     void OnPlayerOrBaseDied()
     {
-        SceneManager.LoadScene("LoseScreen");
+        if(targetShooting.bulletsAmount < -14)
+        {
+            SceneManager.LoadScene("LoseScreen");
+        }
+        
     }
 
     void CheckWinCondition()
