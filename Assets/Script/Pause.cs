@@ -8,11 +8,11 @@ using UnityEngine.UI;
 public class Pause : MonoBehaviour
 {
     public GameObject pauseMenu;
-    //public Button resumeButton;
+    public Button resumeButton;
     void Awake()
     {
         pauseMenu.SetActive(false);
-        //resumeButton.onClick.AddListener(OnResumePressed);
+        resumeButton.onClick.AddListener(() => OnResumePressed());
     }
     void Update()
     {
@@ -31,12 +31,13 @@ public class Pause : MonoBehaviour
         Debug.Log("resume pressed");
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnDestroy()
     {
         Time.timeScale = 1;
+        resumeButton.onClick.RemoveAllListeners();
     }
 }
